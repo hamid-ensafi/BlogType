@@ -3,7 +3,7 @@ import axiosConfig from "@/lib/axiosConfig";
 
 export async function fetchDetail(id:string) {
   try {
-    const response = await axiosConfig.get(`/detail?id=${id}`, {
+    const response = await axiosConfig.get(`/api/detail?id=${id}`, {
       headers: {
         "Content-Type": "application/json",
       },

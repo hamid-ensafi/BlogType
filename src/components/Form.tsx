@@ -11,7 +11,6 @@ export default function Login() {
   });
   const { username, password } = login;
   const { loginMutate, error: formError } = useLogin();
-  console.log(formError);
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (username === "" || password === "") return;

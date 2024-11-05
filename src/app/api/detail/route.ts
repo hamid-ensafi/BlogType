@@ -3,7 +3,6 @@ import { blog } from '@/data/data';
 export async function GET(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const postDetailId = Number(url.searchParams.get("id"));
-  console.log(postDetailId)
   const data = blog.find(item => item.id === postDetailId);
   try {
     if (data) {
