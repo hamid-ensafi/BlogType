@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'iranSans';
+    src: url('../fonts/IRANSansX-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@layer base{
+    body{
+       @apply font-iranSans;
+       @apply bg-dark_900
+    }
+    input{
+        @apply outline-none ;
+        @apply bg-transparent;
+    }
+}
