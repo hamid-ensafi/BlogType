@@ -1,4 +1,4 @@
-import Login from "@/components/Form";
+// import Login from "@/components/Form";
 import { Metadata } from "next";
 
 
@@ -19,7 +19,8 @@ export const metadata:Metadata = {
 export default function Home() {
   return (
     <section className="flex justify-center w-full h-full items-center">
-      <Login />
+      {/* <Login /> */}
+      asghar jer zan 
     </section>
   );
 }
